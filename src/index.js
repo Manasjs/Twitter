@@ -32,7 +32,8 @@ app.listen(3000,async()=>{
     // const comment = await Comment.create({content:"this is my review"});
     // tweet.comments.push(comment);
     //await tweet.save();
-       const tweet = await TweetRepo.getwithComments('687fbaa282d4a5552fd6dc86');
+      // const tweet = await TweetRepo.getwithComments('687fbaa282d4a5552fd6dc86');
+      const tweet = await TweetRepo.getAll(2,4);
 
     console.log(tweet);
 });
