@@ -9,7 +9,7 @@ app.listen(3000,async()=>{
     await connect ();
     console.log("mongo db connected");
     const ser = new TweetService();
-    const tweet= await ser.create({content:'Done with #refactor ?'});
+    const tweet= await ser.create({content:'Watching #movies is #awasome'});
     console.log(tweet);
       
 });
