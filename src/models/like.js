@@ -7,12 +7,12 @@ const LikeSchema = new mongoose.Schema({
         enum: ['Tweet','Comment']
     },
     likeable: {
-        type:mongoose.Schema.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         required:true,
         refPath:'onModel'
     },
     user: {
-        type:mongoose.Schema.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         required:true,
         ref:'User'
     }
