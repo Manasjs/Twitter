@@ -27,7 +27,9 @@ async create(data) {
     }
 
     async get(tweetId) {
+        console.log('[Service] Fetching tweet with ID:', tweetId);
         const tweet = await this.tweetRepository.getWithComments(tweetId);
+        console.log('[Service] Tweet fetched:', tweet);
         return tweet;
     }
 }
